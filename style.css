@@ -1,0 +1,215 @@
+body{
+	font-family: FregatBold;
+}
+
+h1 {
+	text-transform: uppercase;
+	color: #555555;
+	font-size: 48px;
+	margin-left: 120px;
+	margin-top: -95px;	
+}
+
+h2 {
+	text-transform: uppercase;
+	color: #555555;
+	font-size: 30px;
+		
+}
+
+
+
+.after-logo {	
+	color: #555555;
+	font-family: "Arial";
+	font-size: 12px;
+	margin-left: 120px;
+	margin-top: -30px;	
+}
+	
+a {
+text-decoration: none;
+color: #1a09c9;
+}
+
+.navigation {
+margin-top: 30px;
+margin-bottom: -10px;
+}
+
+.navigation > a  {
+color: #555555;
+font-family: "Arial";
+font-size: 12px;
+text-decoration: underline;
+}
+	
+
+.main-menu {
+	display: flex;	
+	flex-wrap: wrap;
+	width: 480px;
+    height: 60px;	
+	justify-content: space-between;
+align-items: center;}
+	
+.shit {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu{
+	text-transform: uppercase;
+	color: #1a09c9;
+	
+	
+}
+
+.wrapper {  
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;}
+  
+header {
+	height: 60px;
+	background-color: #f2f2f2;
+	}
+	
+footer {
+height: 120px;
+background-color: #f2f2f2;
+left: 0;
+bottom: 0;
+width: 100%;	
+}
+
+
+  
+.footer-menu {
+	display: flex;
+	flex-wrap: wrap;
+	width: 170px;
+    height: 60px;	
+	justify-content: space-between;
+align-items: center;}
+	
+.horns {
+	font-family: "Arial";
+	font-size: 12px;
+	color: #383b3a;
+	
+}
+
+.button-top {
+font-family: FregatBold;
+border: 1px solid #808080;
+border-radius: 14px;
+text-transform: uppercase;
+font-size: 16px;	
+padding: 5px 14px;
+background-color: #f2f2f2;
+color: #636363;
+cursor: pointer;
+outline: none;
+}
+
+
+.search-form {
+ position: relative;
+  
+}
+.input-search { 
+font-family: "Arial";
+padding: 5px 14px;
+border-radius: 14px;
+outline: none;
+}
+
+.button-search {
+border: none;
+ outline: none; 
+  height:15px;
+  width: 15px;
+  position: absolute;
+  top: 8px;  
+  right: 10px;
+  background: url(pictures/magnifier.png) no-repeat;
+  cursor: pointer; 
+}
+
+input {  
+background: #ffffff;  
+}
+
+.logo{	
+	margin-top: 54px;
+}
+
+.general-form > *{
+color: #555555;
+font-family: "Arial";
+font-size: 12px;	
+}
+
+.geneal-input {
+	background-color: #f6f6f6; 
+	border-radius: 3px;
+	border: none;
+	height: 30px;
+	box-shadow: 0px 1px 1px 0px #afafaf
+}
+
+table {
+	margin-top: 70px;
+	margin-bottom: 100px;
+}
+
+td {       
+	padding-bottom: 20px;    
+}
+
+.first {	
+	width: 460px;
+}
+
+.second {	
+	width: 300px;
+}
+
+.third {	
+	width: 300px;
+}
+
+.fourth {
+	width: 460px;
+	height: 170px;
+}
+
+.fifth {
+		
+	vertical-align:top;
+}
+
+
+
+
+.add-btn {
+font-family: FregatBold;
+border: 1px solid #1a09c9;
+border-radius: 25px;
+text-transform: uppercase;
+font-size: 16px;	
+height: 50px;
+width: 220px;
+color: #1a09c9;
+cursor: pointer;
+outline: none;
+margin-top: 20px;		
+}
+
+
+
+
+
