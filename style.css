@@ -1,5 +1,5 @@
 @font-face {
-    font-family: FregatBold; 
+	font-family: FregatBold; 
     src: url(font/FregatBold.ttf); 
    } 
 
@@ -10,158 +10,211 @@ body{
 header {
 	min-height: 60px;
 	background-color: #f2f2f2;
-	
+	margin: 0;
+	padding: 0;	
 }
 
-h1 {
-	text-transform: uppercase;
-	color: #555555;
-	font-size: 48px;
-	margin-left: 120px;
-	margin-top: -95px;	
+.logo-name {
+	display: block;	
+	font-size: 0px;		
 }
 
-h2 {
+.name {	
+	display: inline-block;	
+	padding: 0px; 
+	vertical-align: top;
+	margin-top: 46px;	
+	margin-bottom: 0px;
+}
+
+.logo {		
+	margin-top: 54px;
+	margin-right: 35px; 	
+}
+
+
+
+.bigger {	
 	text-transform: uppercase;
 	color: #555555;
+	font-size: 48px;	
+	padding: 0px;	
+}
+
+.h2font {	
+	text-transform: uppercase;
+    color: #555555;
 	font-size: 30px;
-		
+	margin-bottom: -5px;	
+}	
+
+.smaller {	
+	font-family: "Arial";
+	font-size: 12px;
+	text-transform: none;
+	font-weight: normal;
+	position: relative;
+	top: -30px;		
+}
+
+.line {	
+	display: block; 
+	margin-top: -15px;   	
 }
 
 .wrapper {  
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;}
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;}
 
 
-
-.after-logo {	
-	color: #555555;
-	font-family: "Arial";
-	font-size: 12px;
-	margin-left: 120px;
-	margin-top: -30px;	
-}
 	
-a {
-text-decoration: none;
-color: #1a09c9;
+.menu-link {
+    text-decoration: none;
+    color: #1a09c9;
 }
 
-.navigation {
-margin-top: 30px;
-margin-bottom: -10px;
-}
-
-.navigation > a  {
-color: #555555;
-font-family: "Arial";
-font-size: 12px;
-text-decoration: underline;
+.menu-link:active {	
+	border: 1px solid #808080;
+	border-radius: 28px;		
+	padding: 6px 14px;
+	background-color: #f2f2f2;
+	color: #636363;
+	cursor: pointer;
+	outline: none;
+	margin:0px -15px;	
 }
 	
 .main-menu {
-	font-size:0;
+	font-size:0;		
     text-transform: uppercase;
-	color: #1a09c9;
-	height: 30px;
-	padding-left: 0px;   
-    padding-top: 18px;
+	color: #1a09c9;	
+	padding-left: 0px;  
+	padding-top: 27px;		
 }
 
-.menu-item{
-	display: inline-block;
+ .footer-menu {
+	font-size:0;		
+    text-transform: uppercase;
+	color: #1a09c9;	
+	padding-left: 0px;  
+	padding-top: 24px;
+ }
+
+.menu-item, .f-menu-item {
+	display: inline-block;	
 	font-size: 16px;
-    vertical-align: middle;
-	margin-right: 30px;	
-    padding: 0px;    		
+	padding: 0px;
+	margin: 0px;    
+	margin-right: 30px;	 
+	vertical-align: middle;	
+	
 }
 
-.menu-item:nth-child(3){
-    margin-right: 14px;
+.menu-item:nth-child(5){    	
+	float: right;
+	margin-right: 0px; 
+	margin-top: -7px; 		
 }
-
-.menu-item:nth-child(5){	
-    margin-left: 205px;
-    margin-right: 0px; 	
-}
-  
-
 	
 footer {
-height: 120px;
-background-color: #f2f2f2;
-left: 0;
-bottom: 0;
-width: 100%;	
+	height: 120px;
+	background-color: #f2f2f2;		
 }
-
-
-  
-.footer-menu {
-	display: flex;
-	flex-wrap: wrap;
-	width: 170px;
-    height: 60px;	
-	justify-content: space-between;
-align-items: center;}
 	
-.copyright {
+.copyright {	
+    text-transform: none;
 	font-family: "Arial";
 	font-size: 12px;
 	color: #383b3a;
-	
+	float: right;    
+    list-style-type: none;	
 }
 
-.button-top {
-font-family: FregatBold;
-border: 1px solid #808080;
-border-radius: 14px;
-text-transform: uppercase;
-font-size: 16px;	
-padding: 5px 14px;
-background-color: #f2f2f2;
-color: #636363;
-cursor: pointer;
-outline: none;
+#crumbs ul li a {
+	color: #555555;
+    font-family: "Arial";
+    font-size: 12px;
+    text-decoration: underline;
+	font-weight: normal;
+	float: left;		
 }
 
+#crumbs ul li{
+	display: inline-block;
+    list-style:none;
+	vertical-align: middle;
+}
+
+#crumbs ul {    
+    padding-left: 0px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#crumbs ul>li:last-child:after {
+	display: none;
+}
+
+#crumbs ul>li:after {	
+	content: "→";
+    float: left;
+	position: relative; 
+	display: block;  
+    height: 10px;  
+    width: 10px;
+	bottom: 5px;
+	padding: 0px 5px;	
+}	
+
+.navigation-item {	
+	color: #555555;
+    font-family: "Arial";
+    font-size: 12px;
+    text-decoration: underline;
+	font-weight: normal;
+}
 
 .search-form {
- position: relative;
-  
+	position: relative;  
 }
+
 .input-search { 
-font-family: "Arial";
-padding: 5px 14px;
-border-radius: 14px;
-outline: none;
+	font-family: "Arial";
+	color: #ababab;
+	font-size: 12px;
+	padding: 8px 0px 6px 10px;	
+	border-radius: 26px;
+	outline: none;	
+	width: 205px;	
 }
 
 .button-search {
-border: none;
- outline: none; 
-  height:15px;
-  width: 15px;
-  position: absolute;
-  top: 8px;  
-  right: 10px;
-  background: url(pictures/magnifier.png) no-repeat;
-  cursor: pointer; 
+	border: none;
+	outline: none; 
+	height:15px;
+	width: 15px;
+	position: absolute;
+	top: 8px;  
+	right: 10px;
+	background: url(pictures/magnifier.png) no-repeat;
+	cursor: pointer; 
 }
 
 input {  
-background: #ffffff;  
+	background: #ffffff;  
 }
 
-.logo{	
-	margin-top: 54px;
+.general-form {
+	display:table;
+	margin-top: 70px;
+	margin-bottom: 100px;
 }
 
 .general-form > *{
-color: #555555;
-font-family: "Arial";
-font-size: 12px;	
+	color: #555555;
+	font-family: "Arial";
+	font-size: 12px;	
 }
 
 .geneal-input {
@@ -169,16 +222,26 @@ font-size: 12px;
 	border-radius: 3px;
 	border: none;
 	height: 30px;
-	box-shadow: 0px 1px 1px 0px #afafaf
+	box-shadow: 0px 1px 1px 0px #afafaf;
+	padding: 0px 5px;
 }
 
-table {
-	margin-top: 70px;
-	margin-bottom: 100px;
+dl {       
+	display: table-row;    
+}    
+
+dt {       
+	display: table-cell;
+    width: 170px;	
+	height: 50px;	
 }
 
-td {       
-	padding-bottom: 20px;    
+dd {       
+	display: table-cell;	
+}
+
+.check-box {	
+	margin-left: 0px;
 }
 
 .first {	
@@ -191,33 +254,33 @@ td {
 
 .third {	
 	width: 300px;
+	font-family: "Arial";
+	font-size: 12px;
+	padding-left: 11px;
 }
 
 .fourth {
 	width: 460px;
 	height: 170px;
+	resize: none;
 }
 
-.fifth {
-		
-	vertical-align:top;
+.fifth {		
+	vertical-align:top;	
 }
-
-
-
 
 .add-btn {
-font-family: FregatBold;
-border: 1px solid #1a09c9;
-border-radius: 25px;
-text-transform: uppercase;
-font-size: 16px;	
-height: 50px;
-width: 220px;
-color: #1a09c9;
-cursor: pointer;
-outline: none;
-margin-top: 20px;		
+	font-family: FregatBold;
+	border: 1px solid #1a09c9;
+	border-radius: 25px;
+	text-transform: uppercase;
+	font-size: 16px;	
+	height: 50px;
+	width: 220px;
+	color: #1a09c9;
+	cursor: pointer;
+	outline: none;
+	margin-top: 40px;		
 }
 
 
