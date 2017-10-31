@@ -2,88 +2,96 @@
   <html lang="ru">
     <head>       
       <meta charset="utf-8">
-	  <link href="reset.css" rel="stylesheet"> 		
+	    <link href="reset.css" rel="stylesheet"> 		
       <link href="style.css" rel="stylesheet"> 
       <title>сферический сайт</title>	  
     </head>	   
   <body>	   
-    <header>
-      <div class="wrapper">
+    <header class="page-header">
+      <nav class="wrapper">
         <ul class="main-menu">     
           <li class="menu-item"><a href="" class="menu-link">главная</a></li>
-          <li class="menu-item"><a href="" class="menu-link">не особо</a></li>
+          <li class="menu-item"><a href="" class="menu-link">не особо </a></li>
           <li class="menu-item"><a href="" class="menu-link">вообще нет</a></li> 
-          <li class="menu-item"><a href="" class="menu-link">добавление товара</a></li>    	  
-          <li class="menu-item">
+          <li class="menu-item active"><a href="" class="menu-link">добавление товара</a></li>    	  
+          <li class="menu-item search">
             <form class="search-form">
               <input type="text" placeholder="Поиск" class="input-search">
-              <button type="submit" class="button-search"></button>
+                <button type="submit" class="button-search">
+                  <span class="visually-hidden">Искать</span>
+                </button>
             </form>
-	      </li>
-        </ul> 
-      </div>
-    </header>	   
-    <article>
-      <div class="wrapper">
-        <div class="logo-name">   
+	        </li>
+        </ul>
+      </nav>
+    </header>    
+      <main class="wrapper">
+        <section class="logo-name">   
           <img src="pictures/logo.png" class="logo name" alt="logo">
-	      <h1 class="bigger name">Сферический<br>сайт<br><span class="smaller">в вакууме</span>
-	      </h1>      	 
-	    </div>	
-	    <div class="line"><img src="pictures/line.png" alt="line logo">
-	    </div>
-	    <div id="crumbs">
-	      <ul>
-	        <li><a href="">Главная</a></li>
-	        <li><a href="">Сферические товары</a></li>		 
+          <h1 class="bigger name">Сферический<br>сайт<br>
+            <span class="smaller">в вакууме</span>
+	        </h1>      	 
+        </section>	      
+	      <section class="crumbs">
+	        <ul class="crumbs-list">
+	          <li class="crumbs-item"><a href="" class="crumbs-link">Главная</a></li>
+            <li class="crumbs-item"><a href="" class="crumbs-link">Сферические товары</a></li>	            	 
           </ul>		 
-	    </div>
-	    <h2 class="h2font">Добавление сферического товара</h2>	   	   
-	      <div><form action="" method="post" class="general-form">	   
-	        <dl>
-              <dt><label for="name">Наименование</label></dt>
-                <dd><input type="text" name="name" class="geneal-input first"></dd>
-            </dl>
-		    <dl>
-              <dt><label for="code">Код товара</label></dt>
-                <dd><input type="text" name="code" class="geneal-input second"></dd>
-		    </dl>
-		    <dl>
-		      <dt><label for="category">Категрия товара</label></dt>			
-                <dd><select name="category" class="geneal-input third">			
+        </section>
+	      <h2 class="h2font">Добавление сферического товара</h2>	   	   
+	        <section>
+            <form action="" method="post" class="general-form">	   
+	            <dl class="form-row">
+                <dt class="form-cell-1"><label for="name">Наименование</label></dt>
+                  <dd class="form-cell-2">
+                    <input type="text" id="name" class="general-input name-form">
+                  </dd>
+              </dl>
+		          <dl class="form-row">
+                <dt class="form-cell-1"><label for="code">Код товара</label></dt>
+                  <dd class="form-cell-2">
+                    <input type="text" Id="code" class="general-input code-form">
+                  </dd>
+		          </dl>
+		          <dl class="form-row">
+		            <dt class="form-cell-1"><label for="category">Категрия товара</label></dt>			
+                  <dd class="form-cell-2">
+                    <select id="category" class="general-input category-form">			
                       <option selected>Товары сферические вакуумные</option> 
-			          <option>Товары сферические без вакуума</option> 
-			          <option>Боярышник (хит)</option>
+			                <option>Товары сферические без вакуума</option> 
+			                <option>Боярышник (хит)</option>
                     </select>
-		        </dd>
-		    </dl>
-		    <dl>
-		      <dt><input type="checkbox" checked class="check-box">
+		              </dd>
+		          </dl>
+		          <dl class="form-row">
+		            <dt class="form-cell-1"><input type="checkbox" checked class="check-box">
                   <label for="popular">Популярный товар</label>
-		      </dt>
-		    </dl> 
-		    <dl>			
-		      <dt class="fifth"><label for="discription">Описание товара</label>
-		      </dt>
-                <dd><textarea name="discription" class="geneal-input fourth"></textarea>
-		        </dd>
-		      </dl>
-		      <dl>
-		        <dt></dt>			
-                  <dd><input type="submit" value="добавить" class="add-btn">
-		          </dd>
-		      </dl>	   			
-                  </form>
-	        </div>
-	      </div>
-        </article>	   
-        <footer>
+		            </dt>
+		          </dl> 
+		          <dl class="form-row">			
+		            <dt class="form-cell-1 discription-form">
+                  <label for="discription">Описание товара</label>
+		            </dt>
+                  <dd class="form-cell-2">
+                    <textarea id="discription" class="general-input discription-form-text">
+                    </textarea>
+		              </dd>
+		          </dl>
+		          <dl class="form-row">
+		            <dt class="form-cell-1"></dt>			
+                  <dd class="form-cell-2 form-btn"><input type="submit" value="добавить" class="add-btn">
+		              </dd>
+		          </dl>	   			
+            </form>
+          </section>	      
+        </main>	   
+        <footer class="page-footer">
           <div class="wrapper">	   
-	        <ul class="footer-menu">
-	          <li class="f-menu-item"><a href="" class="menu-link">поиск</a></li>
-	          <li class="f-menu-item"><a href="" class="menu-link">карта сайта</a></li>	 
-              <li class="copyright">&copy;&nbsp;Horns &amp;&nbsp;Hooves, 2014</dli>	 
-	        </ul>	
+	          <ul class="main-menu">
+	            <li class="menu-item"><a href="" class="menu-link">поиск</a></li>
+	            <li class="menu-item"><a href="" class="menu-link">карта сайта</a></li>	 
+              <li class="copyright">&copy;&nbsp;Horns &amp;&nbsp;Hooves, 2014</li>	 
+	          </ul>	
           </div>	 
         </footer>
   <body>
