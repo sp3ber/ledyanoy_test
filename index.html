@@ -8,28 +8,27 @@
     </head>	   
   <body>	   
     <header class="page-header">
-      <nav class="wrapper">
+      <div class="wrapper">
         <ul class="main-menu">     
           <li class="menu-item"><a href="" class="menu-link">главная</a></li>
           <li class="menu-item"><a href="" class="menu-link">не особо </a></li>
           <li class="menu-item"><a href="" class="menu-link">вообще нет</a></li> 
-          <li class="menu-item active"><a href="" class="menu-link">добавление товара</a></li>    	  
-          <li class="menu-item search">
-            <form class="search-form">
-              <input type="text" placeholder="Поиск" class="input-search">
-                <button type="submit" class="button-search">
-                  <span class="visually-hidden">Искать</span>
-                </button>
-            </form>
-          </li>
-        </ul>
-      </nav>
+          <li class="menu-item active"><a href="" class="menu-link">добавление товара</a></li> 
+        </ul>        	  
+        <div class="search">
+          <form class="search-form">
+            <input type="text" placeholder="Поиск" class="input-search">
+            <button type="submit" class="button-search">
+              <span class="visually-hidden">Искать</span>
+            </button>
+          </form>
+        </div>
+      </div> 
     </header>    
     <main class="wrapper">
       <section class="logo-name">   
         <img src="pictures/logo.png" class="logo name" alt="logo">
-        <h1 class="bigger name">Сферический<br>сайт<br>
-          <span class="smaller">в вакууме</span>
+        <h1 class="bigger name">Сферический сайт <span class="smaller">в вакууме</span>
         </h1>      	 
       </section>	      
       <section class="crumbs">
@@ -38,7 +37,7 @@
           <li class="crumbs-item"><a href="" class="crumbs-link">Сферические товары</a></li>	            	 
         </ul>		 
       </section>
-      <h2 class="h2font">Добавление сферического товара</h2>	   	   
+      <h2 class="table-name-font">Добавление сферического товара</h2>	   	   
       <section>
         <form action="" method="post" class="general-form">	   
           <dl class="form-row">
@@ -64,8 +63,9 @@
               </dd>
             </dl>
             <dl class="form-row">
-              <dt class="form-cell-1"><input type="checkbox" checked class="check-box">
-                <label for="popular">Популярный товар</label>
+              <dt class="form-cell-1">
+                <input type="checkbox" checked class="check-box" id="popular-check">
+                <label for="popular-check">Популярный товар</label>
               </dt>
             </dl> 
             <dl class="form-row">			
@@ -73,8 +73,7 @@
                 <label for="discription">Описание товара</label>
               </dt>
                 <dd class="form-cell-2">
-                  <textarea id="discription" class="general-input discription-form-text">
-                  </textarea>
+                  <textarea id="discription" class="general-input discription-form-text"></textarea>
                 </dd>
             </dl>
             <dl class="form-row">
@@ -89,9 +88,9 @@
         <div class="wrapper">	   
           <ul class="main-menu">
             <li class="menu-item"><a href="" class="menu-link">поиск</a></li>
-            <li class="menu-item"><a href="" class="menu-link">карта сайта</a></li>	 
-            <li class="copyright">&copy;&nbsp;Horns &amp;&nbsp;Hooves, 2014</li>	 
-          </ul>	
+            <li class="menu-item"><a href="" class="menu-link">карта сайта</a></li>	             	 
+          </ul>	        
+          <div class="copyright">&copy;&nbsp;Horns &amp;&nbsp;Hooves, 2014</div>
         </div>	 
       </footer>
-    <body>
+    </body>
