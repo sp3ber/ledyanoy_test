@@ -1,6 +1,6 @@
 @font-face {
 	font-family: FregatBold; 
-	src: url(font/FregatBold.woff); 
+	src: url(font/FregatBold.woff2); 
 } 
 
 body {
@@ -72,8 +72,7 @@ body {
 	color: #636363;
 	cursor: pointer;
 	outline: none;
-	margin: 0px -15px;
-	transform: translateY(-2px) scale(0.1);	
+	margin: 0px -15px;		
 }
 
 .search-form {
@@ -133,13 +132,14 @@ body {
 
 .logo-name {
 	display: block;	
-	font-size: 0px;	
-	background: url(pictures/line.png) no-repeat 25% 95%;					
+	font-size: 0px;		
+	background: url(pictures/line.png) no-repeat bottom;					
 }
 
 .name {	
 	display: inline-block;		
-	vertical-align: top;		
+	vertical-align: top;
+	padding-bottom: 30px;			
 }
 
 .logo {		
@@ -148,6 +148,7 @@ body {
 }
 
 .bigger {	
+	display: block;
 	text-transform: uppercase;
 	color: #555555;
 	font-size: 48px;
@@ -160,14 +161,14 @@ body {
 	text-transform: none;
 	font-weight: normal;
 	position: relative;
-	top: -30px;					
+	padding-left: 3px;					
 }
 
 .crumbs {	
 	font-family: "Arial";
 	font-size: 12px;    
 	font-weight: normal;	
-	margin-top: 30px;	
+	margin-top: 40px;	
 	color: #555555;		
 }
 
@@ -184,24 +185,20 @@ body {
 	padding: 0px 5px 0px 5px;
 }
 
-.general-form {
-	display: table;
-	margin-top: 15px;	
-	padding-top: 65px;		
-	color: #555555;
-	font-family: "Arial";
-	font-size: 12px;	
-}
-
-.form-caption {		
-	display: table-caption;						
-}
-
 .table-name-font {	
 	font-family: FregatBold;
 	text-transform: uppercase;
 	color: #555555;
-	font-size: 30px;				
+	font-size: 30px;
+	margin-top: 10px;				
+}
+
+.general-form {
+	display: table;
+	margin-top: 70px;			
+	color: #555555;
+	font-family: "Arial";
+	font-size: 12px;	
 }
 
 .general-input {
